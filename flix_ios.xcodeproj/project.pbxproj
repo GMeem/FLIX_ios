@@ -115,7 +115,6 @@
 				079790C8A3710CBEA0D52D46 /* Pods-flix_iosTests.debug.xcconfig */,
 				2E159828630698803C76B01C /* Pods-flix_iosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -595,6 +594,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3ZSGRTK86;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = flix_ios/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Flix;
@@ -624,6 +624,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3ZSGRTK86;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = flix_ios/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Flix;
