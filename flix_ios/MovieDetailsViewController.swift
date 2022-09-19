@@ -7,6 +7,7 @@
 
 import UIKit
 import AlamofireImage
+
 class MovieDetailsViewController: UIViewController {
     
     
@@ -46,7 +47,48 @@ class MovieDetailsViewController: UIViewController {
          else {
                   backdropView.image = nil
          }
+        
+         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MovieDetailsViewController.didTap(sender:)))
+
+         // Optionally set the number of required taps, e.g., 2 for a double click
+         tapGestureRecognizer.numberOfTapsRequired = 1
+
+         // Attach it to a view of your choice. If it's a UIImageView, remember to enable user interaction
+         posterView.isUserInteractionEnabled = true
+         posterView.addGestureRecognizer(tapGestureRecognizer)
+         
+        
     }
+    
+    
+    
+    @IBAction func didTap(sender: UITapGestureRecognizer) {
+        
+        let location = sender.location(in: view)
+        print("image tapped")
+        /*
+        let movieID = movie["id"]!
+        let mid = String(movieID)
+        let urlBeforeID = "https://api.themoviedb.org/3/movie/"
+        let urlAfterID = "videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
+        //let apiUrl = URL(string: urlBeforeID + movieID! + urlAfterID)
+        print(movie["title"] as? String)
+        print(movieID)
+        //print(apiUrl)
+        
+        
+        
+         guard let url = URL(string: "https://www.google.com") else {
+         return
+         }
+         let vc = TrailerViewController(url: url, title: "Google")
+         let navVC = UINavigationController(rootViewController: vc)
+         present(navVC, animated: true)
+         */
+        
+        
+    }
+    
     
 
     /*
