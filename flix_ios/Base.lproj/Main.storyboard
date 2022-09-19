@@ -152,6 +152,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlU-V2-LKg">
+                                <rect key="frame" x="161" y="397" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cq1-H6-nhS"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,12 +170,14 @@
                             <constraint firstItem="yLj-jm-h2i" firstAttribute="top" secondItem="cq1-H6-nhS" secondAttribute="top" id="Bmx-60-Hqb"/>
                             <constraint firstItem="cq1-H6-nhS" firstAttribute="trailing" secondItem="YVB-FI-cln" secondAttribute="trailing" constant="20" id="Cfd-Pd-GY9"/>
                             <constraint firstItem="YVB-FI-cln" firstAttribute="top" secondItem="yLj-jm-h2i" secondAttribute="bottom" constant="-27" id="DsO-j4-T03"/>
+                            <constraint firstItem="vlU-V2-LKg" firstAttribute="leading" secondItem="B4h-9p-4M6" secondAttribute="trailing" constant="8" symbolic="YES" id="MBs-7a-GpC"/>
                             <constraint firstItem="B4h-9p-4M6" firstAttribute="top" secondItem="cq1-H6-nhS" secondAttribute="top" constant="189" id="Wtw-5o-W2J"/>
                             <constraint firstItem="YVB-FI-cln" firstAttribute="leading" secondItem="B4h-9p-4M6" secondAttribute="trailing" constant="8" id="Zkq-IP-rlY"/>
                             <constraint firstItem="cq1-H6-nhS" firstAttribute="trailing" secondItem="YVB-FI-cln" secondAttribute="trailing" constant="20" id="bBN-hL-Hji"/>
                             <constraint firstItem="YVB-FI-cln" firstAttribute="top" secondItem="yLj-jm-h2i" secondAttribute="bottom" constant="-27" id="gJf-Ho-0OO"/>
                             <constraint firstItem="YVB-FI-cln" firstAttribute="top" secondItem="yLj-jm-h2i" secondAttribute="bottom" constant="-27" id="gae-Ag-ylU"/>
                             <constraint firstItem="YVB-FI-cln" firstAttribute="leading" secondItem="B4h-9p-4M6" secondAttribute="trailing" constant="8" id="k7s-Wu-ltg"/>
+                            <constraint firstItem="vlU-V2-LKg" firstAttribute="top" secondItem="YVB-FI-cln" secondAttribute="bottom" constant="3.5" id="mhY-ja-QPI"/>
                             <constraint firstItem="cq1-H6-nhS" firstAttribute="trailing" secondItem="YVB-FI-cln" secondAttribute="trailing" constant="20" id="ngN-Cb-oHT"/>
                             <constraint firstItem="B4h-9p-4M6" firstAttribute="leading" secondItem="cq1-H6-nhS" secondAttribute="leading" constant="7" id="wvg-on-6WY"/>
                             <constraint firstItem="Mnk-XI-jz9" firstAttribute="top" secondItem="B4h-9p-4M6" secondAttribute="bottom" constant="8" symbolic="YES" id="y3q-2i-IxC"/>
@@ -178,6 +186,7 @@
                     <navigationItem key="navigationItem" id="fa4-wA-sXe"/>
                     <connections>
                         <outlet property="backdropView" destination="yLj-jm-h2i" id="NVY-Yc-Pwa"/>
+                        <outlet property="dateLabel" destination="vlU-V2-LKg" id="ZYp-XB-S3t"/>
                         <outlet property="posterView" destination="B4h-9p-4M6" id="6xC-Hl-Uec"/>
                         <outlet property="synopsisLabel" destination="Mnk-XI-jz9" id="z1j-oe-3OX"/>
                         <outlet property="titleLabel" destination="YVB-FI-cln" id="BGu-0X-hz7"/>
