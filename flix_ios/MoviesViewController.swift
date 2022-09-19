@@ -13,6 +13,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     @IBOutlet weak var tableView: UITableView!
+    
     var movies = [[String:Any]]()
     
 
@@ -62,8 +63,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let title = movie["title"] as! String
         let synopsis = movie["overview"] as! String
         
+        let posterBaseUrl = "https://image.tmdb.org/t/p/w500"
+        
         if let posterPath = movie["poster_path"] as? String {
-                  let posterBaseUrl = "https://image.tmdb.org/t/p/w500"
                   let posterUrl = URL(string: posterBaseUrl + posterPath)
             cell.posterView.af.setImage(withURL: posterUrl!)
          }

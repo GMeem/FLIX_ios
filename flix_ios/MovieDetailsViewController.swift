@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Alamofire
+import AlamofireImage
 class MovieDetailsViewController: UIViewController {
     
     
